@@ -1,0 +1,181 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background: linear-gradient(to bottom, #0f9d58, #e8f5e9);
+}
+
+/* NAVBAR */
+nav {
+    background: linear-gradient(to right, #0f9d58, #34a853);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: gold;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: #e8f5e9;
+}
+
+header h1 {
+    color: #0f9d58;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* SLIDER */
+.slider {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 12s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* ARTIKEL */
+.artikel {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+    width: 300px;
+    background: #f1f8e9;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+/* GAMBAR DI CARD */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* PROFIL */
+.profil {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+    background: #f1f8e9;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.profil img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.cerita {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.cerita h2 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.cerita p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(to right, #0f9d58, #34a853);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ANIMASI SLIDER */
+@keyframes slide {
+    0% {margin-left: 0;}
+    30% {margin-left: 0;}
+    35% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .artikel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profil img {
+        width: 100%;
+    }
+}
